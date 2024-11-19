@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <div>
+                    <form autocomplete="off" onsubmit="onFormSubmit(event)">
+                        <div>
+                            <label for="fname">Name</label>
+                            <input type="text" name="fname" id="fname" placeholder="Name" maxlength="20" autofocus required/>
+                        </div>
+                        <div>
+                            <label for="email">Email-id</label>
+                            <input type="email" name="email" id="email"  placeholder="Email-id" required/>
+                        </div>
+                        <div>
+                            <label for="phone">Phone-no</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Enter 10-digit phone number" maxlength="10" required/>
+                        </div>
+                        <div>
+                            <label for="dob">Date-of-Birth</label>
+                            <input type="date" name="dob" id="dob">
+                        </div>
+
+                        <div class="form_action--button">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+                </div>
+            </td>
+            <td>
+                <table class="list" id="storeList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone no</th>
+                            <th>Date of Birth</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data rows will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

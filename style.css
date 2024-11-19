@@ -1,0 +1,133 @@
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTpYhfwnTez887GTQo68aYM07KBAFdcZBFsQ&s'); /* Optional: Add background image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    background: rgb(124,154,167);
+    border-collapse: collapse; /* Added for table row spacing consistency */
+}
+
+table.list {
+    text-align: center;
+    width: 100%;
+}
+
+td, th { /* Added th selector for header styling */
+    border: 1px solid rgb(204,200,200);
+    text-align: left;
+    padding: 10px 15px;
+}
+
+th {
+    background-color: rgb(124, 154, 167);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(204, 200, 200);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(240, 240, 240); /* Light color for odd rows */
+}
+
+/* Form container background color */
+form {
+    background-color: #ebf1f3; /* Light grey background for the form */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for form */
+    margin-bottom: 30px; /* Extra space below the form */
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165,161,161);
+    border-radius: 4px;
+    font-size: 1rem; /* Consistent font size */
+}
+
+input[type="submit"], input[type="reset"], button {
+    background: #eee;
+    padding: 12px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    text-align: center; /* Ensures the button text is centered */
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+    background: #4b99d8; /* Hover effect for buttons */
+}
+
+button {
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background: #4b99d8;
+}
+
+.form_action--button {
+    display: flex; /* Align buttons in one line */
+    justify-content: space-between;
+    width: 100%;
+}
+
+input[type="reset"] {
+    background: #f44336; /* Red background for reset button */
+}
+
+input[type="reset"]:hover {
+    background: #d32f2f; /* Darker red when hovered */
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+table.list td {
+    text-align: center; /* Center the text inside the table */
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+        width: 100%; /* Ensure inputs take full width on smaller screens */
+    }
+
+    .form_action--button {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
+}
